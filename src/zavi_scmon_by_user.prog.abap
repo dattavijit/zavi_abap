@@ -91,7 +91,7 @@ CLASS lcl_app IMPLEMENTATION.
         read_start_time = p_timef
         read_end_date   = p_datet
         read_end_time   = p_timet
-        read_username   = CONV swncuname( p_user )
+        read_username   = p_user
       IMPORTING
         normal_records  = lt_main
       EXCEPTIONS
